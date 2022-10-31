@@ -1,0 +1,229 @@
+/* RESETS */
+
+* { box-sizing: border-box; }
+
+html, body{
+  height: 100%;
+  transition: 0.5s;
+}
+a, button {
+  cursor: pointer;
+}
+
+h1{
+  font-size: 30px;
+}
+
+a{
+  font-size: 13px;
+}
+
+section{
+  margin: 0;
+  display: grid;
+  place-items: center;
+}
+
+body{
+  background-color: white;
+}
+
+button{
+  margin: 0;
+  background-color: #556B9B ;
+  border-color: transparent;
+  border-radius: 12px;
+  height: 24px;
+  color: white;
+  font-weight: 600;
+  margin: 12px 2px 12px 2px;
+  width: auto;
+}
+
+.div-busqueda{
+  background-color: black;
+  margin: -8px;
+  border: 1px solid black;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.top-left{
+  color: white;
+  background: transparent;
+  font-weight: 700;
+  font-size: 16px;
+  border: 0;
+  background-color: transparent;
+}
+
+.top-right{
+  color: white;
+  background: transparent;
+  font-weight: 700;
+  float: right;
+  font-size: 14px;
+  border: 0;
+}
+
+.parent-div{
+  position: relative;
+}
+
+.content-contenedor-iniciar{
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  display: grid;
+  background-color: white;
+  border-radius: 16px;
+  border: 1px solid #EBEBEB;
+  text-align: center;
+  width: 230px;
+  height: 300px;
+  visibility: visible;
+}
+
+body.open .content-contenedor-iniciar{
+  visibility: visible;
+  scale: 1;
+
+}
+
+.reduction-buho{
+  width: 94px;
+  margin: 0px 0px -29px 0px;
+}
+
+.reduction2-buho{
+  width: 77px;
+  margin: -30px 0px -20px 0px;
+}
+
+.place{
+  place-items: center;
+}
+
+
+.opciones-inicio{
+  margin:  13px 1px 1px 1px;
+  width: 65%;
+  height: 23px;
+  background-color: black;
+  font-weight: 300;
+  font-size: 13px;
+}
+
+.content-div{
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  padding: 53px 5px 0px 5px;
+  margin: 14px 0px 10px 0px;
+  display: grid;
+  background-color: white;
+  border-radius: 16px;
+  border: 1px solid #EBEBEB;
+  text-align: center;
+  width: 230px;
+  height: 309px;
+  visibility: hidden;
+}
+
+
+
+body.open .content-div{
+  visibility: visible;
+  scale: 1.1;
+  animation: modal-in 0.5s;
+}
+
+body.openRe .content2-div{
+  visibility: visible;
+  scale:  1.1;
+  animation: modal-in 0.5s;
+
+}
+
+
+@keyframes modal-in {
+  0% {
+    translate: 0% -1% ;
+    scale: 1.1;
+    opacity: 100%;
+  }
+  100% {
+    opacity: 100%;
+    scale: 1;
+    visibility: visible;
+  }
+}
+
+
+body.openRe .content-contenedor-iniciar{
+  visibility: hidden;
+}
+
+
+.content2-div{
+  position: relative ;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+  margin: 0;
+  width: 230px;
+  padding: 30px 5px 0px 5px;
+  height: 300px;
+  border-radius: 16px;
+  border: 1px solid #EBEBEB;
+  background-color: white;
+  color: black;
+  visibility: hidden ;
+}
+
+
+.content-form{
+  display: grid;
+  gap: 6px;
+  width: 100%;
+}
+
+.content2-form{
+  display: grid;
+  gap: 6px;
+  margin: 0 22px 0 22px;
+  max-width: 100%;
+}
+
+.button-ingresar{
+  margin:  9px 1px 1px 1px;
+  width: 65%;
+  height: 22px;
+  background-color: black;
+  font-weight: 300;
+  font-size: 13px;
+  border: 0px none transparent;
+}
+
+.button-regresar{
+  margin:  10px 1px 1px 8px;
+  width: 40%;
+  height: 18px;
+  background-color: transparent;
+  color: black;
+  font-weight: 200;
+  font-size: 9px;
+  border: 0px none transparent;
+}
+
+
+/* CLASES */
+
+
